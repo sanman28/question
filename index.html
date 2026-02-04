@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Be My Valentine?</title>
-
 <style>
 body {
   margin: 0;
@@ -17,19 +16,16 @@ body {
   background-color: #ffe6e6;
   overflow: hidden;
 }
-
 h1 {
   color: #ff1a75;
   margin-bottom: 20px;
   text-align: center;
 }
-
 img.main {
   width: 250px;
   border-radius: 15px;
   margin-bottom: 20px;
 }
-
 button {
   padding: 15px 30px;
   font-size: 20px;
@@ -38,25 +34,21 @@ button {
   border: none;
   cursor: pointer;
 }
-
 #yes {
   background-color: #ff4d94;
   color: white;
 }
-
 #no {
   background-color: #ccc;
   color: white;
   position: absolute;
 }
-
 footer {
   position: absolute;
   bottom: 10px;
   font-size: 14px;
   color: #555;
 }
-
 /* POPUP */
 #popup {
   display: none;
@@ -113,14 +105,11 @@ footer {
 <script>
 // NO BUTTON RUNS AWAY
 const noBtn = document.getElementById("no");
-
 noBtn.style.left = Math.random() * (window.innerWidth - 100) + "px";
 noBtn.style.top = Math.random() * (window.innerHeight - 50) + "px";
-
 document.addEventListener("mousemove", (e) => {
   const rect = noBtn.getBoundingClientRect();
   const offset = 60;
-
   if (
     e.clientX > rect.left - offset &&
     e.clientX < rect.right + offset &&
